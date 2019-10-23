@@ -1,4 +1,4 @@
-package at.fhv.teama.kartenverkauf.dto;
+package at.fhv.teama.easyticket.dto;
 
 import lombok.Data;
 
