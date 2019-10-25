@@ -1,10 +1,9 @@
 package at.fhv.teama.easyticket.rmi;
 
-import at.fhv.teama.easyticket.dto.AddressDto;
-import at.fhv.teama.easyticket.dto.ProgramDto;
+import at.fhv.teama.easyticket.dto.VenueDto;
+
+import java.util.Set;
 
 public interface EasyTicketService {
-    void saveAddress(AddressDto addressDto);
-
-    void saveProgram(ProgramDto programDto);
+    Set<VenueDto> getAllVenues();
 }
