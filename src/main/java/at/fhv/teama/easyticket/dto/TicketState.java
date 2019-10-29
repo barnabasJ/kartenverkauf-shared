@@ -1,6 +1,8 @@
 package at.fhv.teama.easyticket.dto;
 
-public enum TicketState {
+import java.io.Serializable;
+
+public enum TicketState implements Serializable {
     FREE,
     RESERVERD,
     SOLD,

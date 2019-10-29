@@ -2,8 +2,10 @@ package at.fhv.teama.easyticket.dto;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class AddressDto {
+public class AddressDto implements Serializable {
     private Long id;
     private String line1;
     private String line2;
