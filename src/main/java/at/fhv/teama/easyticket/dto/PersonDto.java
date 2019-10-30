@@ -11,5 +11,5 @@ public class PersonDto implements Serializable {
     private String lastname;
     private String email;
     private String phone;
-    private AddressDto addressDto;
+    private AddressDto address;
 }

@@ -10,8 +10,8 @@ public class TicketDto implements Serializable {
     private Integer x;
     private Integer y;
     private TicketState state;
-    private CategoryDto categoryDto;
-    private VenueDto venueDto;
-    private PersonDto personDto;
+    private CategoryDto category;
+    private VenueDto venue;
+    private PersonDto person;
 
 }

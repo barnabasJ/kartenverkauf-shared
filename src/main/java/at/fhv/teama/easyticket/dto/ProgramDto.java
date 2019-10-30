@@ -11,5 +11,5 @@ public class ProgramDto implements Serializable {
     private String genre;
     private String description;
     private PersonDto organizer;
-    private Set<ArtistDto> artistDtos;
+    private Set<ArtistDto> artists;
 }
