@@ -13,4 +13,9 @@ public class PersonDto implements Serializable, ObjectWithId {
     private String email;
     private String phone;
     private AddressDto address;
+
+    @Override
+    public String toString() {
+        return firstname+" "+lastname;
+    }
 }

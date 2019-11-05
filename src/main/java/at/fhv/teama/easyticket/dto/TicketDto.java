@@ -15,4 +15,10 @@ public class TicketDto implements Serializable, ObjectWithId {
     private VenueDto venue;
     private PersonDto person;
 
+
+    @Override
+    public String toString() {
+        return venue.getProgram().getDescription()+", "+
+                x+"/"+y+", \t"+category.getPrice()/100+" €";
+    }
 }
