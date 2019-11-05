@@ -2,6 +2,8 @@ package at.fhv.teama.easyticket.dto;
 
 import at.fhv.teama.easyticket.interfaces.ObjectWithId;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -14,5 +16,7 @@ public class VenueDto implements Serializable, ObjectWithId {
     private LocalDateTime date;
     private AddressDto address;
     private ProgramDto program;
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     private Set<TicketDto> tickets = new HashSet<>();
 }
