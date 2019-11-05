@@ -1,11 +1,12 @@
 package at.fhv.teama.easyticket.dto;
 
+import at.fhv.teama.easyticket.interfaces.ObjectWithId;
 import lombok.Data;
 
 import java.io.Serializable;
 
 @Data
-public class TicketDto implements Serializable {
+public class TicketDto implements Serializable, ObjectWithId {
     private Long id;
     private Integer x;
     private Integer y;
