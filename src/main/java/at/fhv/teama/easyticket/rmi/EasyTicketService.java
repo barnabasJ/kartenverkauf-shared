@@ -49,5 +49,14 @@ public interface EasyTicketService {
      */
     Set<TicketDto> reserveTickets(Collection<TicketDto> tickets);
 
+    /**
+     * A Method to unreserve tickets for a Venue. The Ticket must
+     * necessarily contain a customer.
+     *
+     * @param tickets The tickets to unreserve
+     * @return
+     */
+    Boolean unreserveTickets(Collection<TicketDto> tickets);
+
 
 }
