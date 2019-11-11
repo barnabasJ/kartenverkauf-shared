@@ -6,6 +6,7 @@ import at.fhv.teama.easyticket.dto.VenueDto;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Set;
 
 public interface EasyTicketService {
@@ -37,6 +38,16 @@ public interface EasyTicketService {
      * @return The tickets which where already bought or reserved
      */
     Set<TicketDto> buyTickets(Collection<TicketDto> tickets);
+
+
+    /**
+     * A Method to reserve tickets for a Venue. The Ticket must
+     * necessarily contain a customer.
+     *
+     * @param tickets The tickets to reserve
+     * @return The tickets which where already bought or reserved
+     */
+    Set<TicketDto> reserveTickets(Collection<TicketDto> tickets);
 
 
 }
