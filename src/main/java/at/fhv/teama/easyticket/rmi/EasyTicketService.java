@@ -58,5 +58,7 @@ public interface EasyTicketService {
      */
     Boolean unreserveTickets(Collection<TicketDto> tickets);
 
+    boolean login(String username, String password);
+
 
 }
