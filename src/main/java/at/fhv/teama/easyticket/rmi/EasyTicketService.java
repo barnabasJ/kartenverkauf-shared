@@ -1,5 +1,6 @@
 package at.fhv.teama.easyticket.rmi;
 
+import at.fhv.teama.easyticket.dto.MessageDto;
 import at.fhv.teama.easyticket.dto.PersonDto;
 import at.fhv.teama.easyticket.dto.TicketDto;
 import at.fhv.teama.easyticket.dto.VenueDto;
@@ -56,9 +57,17 @@ public interface EasyTicketService {
      * @param tickets The tickets to unreserve
      * @return
      */
-    Boolean unreserveTickets(Collection<TicketDto> tickets);
+    boolean unreserveTickets(Collection<TicketDto> tickets);
 
-    boolean login(String username, String password);
+    void publishMessage(MessageDto message);
+
+    void publishFeed(String url, String topic);
+
+    Set<MessageDto> getAllUnreadMessages (String username);
+
+    void acknowledgeMessage(String id);
+
+    Set<String> login(String username, String password);
 
 
 }
