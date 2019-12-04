@@ -5,11 +5,12 @@ import at.fhv.teama.easyticket.dto.PersonDto;
 import at.fhv.teama.easyticket.dto.TicketDto;
 import at.fhv.teama.easyticket.dto.VenueDto;
 
+import javax.ejb.Remote;
 import java.time.LocalDateTime;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Set;
 
+@Remote
 public interface EasyTicketService {
     Set<VenueDto> getAllVenues();
 
@@ -21,10 +22,10 @@ public interface EasyTicketService {
      * If no to date  is set a year from now will be used
      *
      * @param description program description
-     * @param genre program genre
-     * @param artistName artist name
-     * @param from date from
-     * @param to date to
+     * @param genre       program genre
+     * @param artistName  artist name
+     * @param from        date from
+     * @param to          date to
      * @return returns all matching venues
      */
     Set<VenueDto> searchVenue(String description, String genre, String artistName, LocalDateTime from, LocalDateTime to);
@@ -63,7 +64,7 @@ public interface EasyTicketService {
 
     void publishFeed(String url, String topic);
 
-    Set<MessageDto> getAllUnreadMessages (String username);
+    Set<MessageDto> getAllUnreadMessages(String username);
 
     void acknowledgeMessage(String id);
 
