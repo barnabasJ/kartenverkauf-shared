@@ -66,7 +66,7 @@ public interface EasyTicketService {
 
     Set<MessageDto> getAllUnreadMessages(String username);
 
-    void acknowledgeMessage(String id);
+    void acknowledgeMessage(String id, String username);
 
     Set<String> login(String username, String password);
 
