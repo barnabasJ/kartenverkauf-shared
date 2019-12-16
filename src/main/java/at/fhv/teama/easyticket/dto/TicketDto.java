@@ -1,6 +1,7 @@
 package at.fhv.teama.easyticket.dto;
 
 import at.fhv.teama.easyticket.interfaces.ObjectWithId;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -12,6 +13,7 @@ public class TicketDto implements Serializable, ObjectWithId {
     private Integer y;
     private TicketState state;
     private CategoryDto category;
+    @JsonIgnore
     private VenueDto venue;
     private PersonDto person;
 

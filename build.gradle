@@ -24,4 +24,5 @@ repositories {
 dependencies {
     compileOnly 'javax:javaee-api:8.0'
     testImplementation 'junit:junit:4.12'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.10.1'
 }
