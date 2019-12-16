@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Data
 public class MessageDto implements Serializable, ObjectWithId {
 
-    String id;
+    long timestamp;
     String topic;
     String content;
 
